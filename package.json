@@ -1,0 +1,25 @@
+{
+  "name": "w",
+  "version": "0.0.0",
+  "description": "A very minimal web templater.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefeathers/w.git"
+  },
+  "keywords": [
+    "web",
+    "templater",
+    "node",
+    "w"
+  ],
+  "author": "Muthu Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefeathers/w/issues"
+  },
+  "homepage": "https://github.com/codefeathers/w#readme"
+}
