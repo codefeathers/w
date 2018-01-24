@@ -1,7 +1,8 @@
 # w
-A very minimal web templater.
 
-Will be soon in development.
+w is a cli application to spin up WordBox instances.
+
+[WordBox](https://github.com/codefeathers/WordBox) is a quick development (and deployment) environment for PHP.
 
 ### Credits
 
