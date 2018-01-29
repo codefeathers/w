@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/codefeathers/w/issues"
   },
-  "homepage": "https://github.com/codefeathers/w#readme"
+  "homepage": "https://github.com/codefeathers/w#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "commander": "^2.13.0",
+    "node-7z": "^0.4.0"
+  }
 }

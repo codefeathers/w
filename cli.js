@@ -1,10 +1,19 @@
 #!/usr/bin/env node
 
-var program = require('commander');
+const program = require('commander');
 
-program
-  .version('0.1.0')
-  .option('-h, --help', 'Show w-cli help')
-  .parse(process.argv);
+const wordbox = require('./lib/api');
 
-if (program.help) console.log('w -v for version number');
+program.version('1.0.2');
+
+program.command('new <appname> [options...]')
+  .description('Create new WordBox app')
+  .action((appname, options) => {
+    wordbox.newapp(appname, options)
+  });
+
+program.command('-h, --help')
+  .description('Show w-cli help')
+  .action(() => console.log('Show w-cli help'));
+
+program.parse(process.argv);

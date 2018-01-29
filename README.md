@@ -1,6 +1,6 @@
 # w
 
-w is a cli application to spin up WordBox instances.
+w is a cli application to spin up WordBox instances. Unstable, but in active development.
 
 [WordBox](https://github.com/codefeathers/WordBox) is a quick development (and deployment) environment for PHP.
 
