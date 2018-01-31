@@ -1,11 +1,12 @@
-var sevenZip = require('node-7z')
-var Zip = new sevenZip()
+'use strict';
 
-const extract = (filename, destination) => {
-Zip.extractFull(filename, destination)
-	.progress((files) => console.log('Some files are extracted: %s', files))
-	.then(() => console.log('Extracting done!'))
-	.catch((err) => console.error(err))
-}
+const child = require('child_process');
+const { normalize } = require('path');
 
-module.exports = extract
+function extract(source, destination) {
+	child.execSync(`7z x ${source} -o${destination}`);
+	child.execSync(`mv ${normalize(destination + '/WordBox-master/*')} ${destination}`);
+	child.execSync(`rm -rf ${normalize(destination + '/WordBox-master/')}`);
+};
+
+module.exports = extract;

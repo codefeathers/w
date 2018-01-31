@@ -1,8 +1,9 @@
 {
   "name": "w",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "WordBox cli to quickly spin up PHP dev environments.",
-  "main": "app.js",
+  "main": "lib/api.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +27,6 @@
   "homepage": "https://github.com/codefeathers/w#readme",
   "dependencies": {
     "axios": "^0.17.1",
-    "commander": "^2.13.0",
-    "node-7z": "^0.4.0"
+    "commander": "^2.13.0"
   }
 }
